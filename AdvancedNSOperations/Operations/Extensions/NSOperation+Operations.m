@@ -10,4 +10,29 @@
 
 @implementation NSOperation (Operations)
 
+- (void)addCompletionBlock:(void (^)(void))block {
+    
+    void (^existing)(void) = self.completionBlock;
+    
+    if (existing) {
+        /*
+         If we already have a completion block, we construct a new one by
+         chaining them together.
+         */
+        self.completionBlock = ^(void) {
+            existing();
+            block();
+        };
+    }
+    else {
+        self.completionBlock = block;
+    }
+}
+
+- (void)addDenpendencies:(NSArray *)dependencies {
+    for (NSOperation *dependency in dependencies) {
+        [self addDependency:dependency];
+    }
+}
+
 @end

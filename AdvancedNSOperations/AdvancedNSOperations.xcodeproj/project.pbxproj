@@ -12,6 +12,11 @@
 		3786FA401C45361A00B25CAD /* BlockOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3786FA3F1C45361A00B25CAD /* BlockOperation.m */; };
 		3786FA431C45365400B25CAD /* NSOperation+Operations.m in Sources */ = {isa = PBXBuildFile; fileRef = 3786FA421C45365400B25CAD /* NSOperation+Operations.m */; };
 		3786FA471C4536CC00B25CAD /* OperationCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 3786FA461C4536CC00B25CAD /* OperationCondition.m */; };
+		3786FA4A1C453A4400B25CAD /* OperationBlockObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 3786FA491C453A4400B25CAD /* OperationBlockObserver.m */; };
+		3786FA4D1C453AC800B25CAD /* OperationTimeoutObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 3786FA4C1C453AC800B25CAD /* OperationTimeoutObserver.m */; };
+		3786FA501C453B4200B25CAD /* OperationErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = 3786FA4F1C453B4200B25CAD /* OperationErrors.m */; };
+		3786FA531C453CB300B25CAD /* ExclusivityController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3786FA521C453CB300B25CAD /* ExclusivityController.m */; };
+		3786FA561C453D6400B25CAD /* GroupOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3786FA551C453D6400B25CAD /* GroupOperation.m */; };
 		37A8C3C31C4532D70075CB80 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A8C3C21C4532D70075CB80 /* main.m */; };
 		37A8C3C61C4532D70075CB80 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A8C3C51C4532D70075CB80 /* AppDelegate.m */; };
 		37A8C3C91C4532D70075CB80 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A8C3C81C4532D70075CB80 /* ViewController.m */; };
@@ -29,9 +34,19 @@
 		3786FA3F1C45361A00B25CAD /* BlockOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockOperation.m; sourceTree = "<group>"; };
 		3786FA411C45365400B25CAD /* NSOperation+Operations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSOperation+Operations.h"; sourceTree = "<group>"; };
 		3786FA421C45365400B25CAD /* NSOperation+Operations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSOperation+Operations.m"; sourceTree = "<group>"; };
-		3786FA441C45366900B25CAD /* NSOperationObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSOperationObserver.h; sourceTree = "<group>"; };
+		3786FA441C45366900B25CAD /* OperationObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationObserver.h; sourceTree = "<group>"; };
 		3786FA451C4536CC00B25CAD /* OperationCondition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationCondition.h; sourceTree = "<group>"; };
 		3786FA461C4536CC00B25CAD /* OperationCondition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperationCondition.m; sourceTree = "<group>"; };
+		3786FA481C453A4400B25CAD /* OperationBlockObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationBlockObserver.h; sourceTree = "<group>"; };
+		3786FA491C453A4400B25CAD /* OperationBlockObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperationBlockObserver.m; sourceTree = "<group>"; };
+		3786FA4B1C453AC800B25CAD /* OperationTimeoutObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationTimeoutObserver.h; sourceTree = "<group>"; };
+		3786FA4C1C453AC800B25CAD /* OperationTimeoutObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperationTimeoutObserver.m; sourceTree = "<group>"; };
+		3786FA4E1C453B4200B25CAD /* OperationErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationErrors.h; sourceTree = "<group>"; };
+		3786FA4F1C453B4200B25CAD /* OperationErrors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperationErrors.m; sourceTree = "<group>"; };
+		3786FA511C453CB300B25CAD /* ExclusivityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExclusivityController.h; sourceTree = "<group>"; };
+		3786FA521C453CB300B25CAD /* ExclusivityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExclusivityController.m; sourceTree = "<group>"; };
+		3786FA541C453D6400B25CAD /* GroupOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupOperation.h; sourceTree = "<group>"; };
+		3786FA551C453D6400B25CAD /* GroupOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupOperation.m; sourceTree = "<group>"; };
 		37A8C3BE1C4532D70075CB80 /* AdvancedNSOperations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdvancedNSOperations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37A8C3C21C4532D70075CB80 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		37A8C3C41C4532D70075CB80 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -60,6 +75,8 @@
 			children = (
 				3786FA451C4536CC00B25CAD /* OperationCondition.h */,
 				3786FA461C4536CC00B25CAD /* OperationCondition.m */,
+				3786FA4E1C453B4200B25CAD /* OperationErrors.h */,
+				3786FA4F1C453B4200B25CAD /* OperationErrors.m */,
 			);
 			path = Conditions;
 			sourceTree = "<group>";
@@ -76,7 +93,11 @@
 		3786FA351C45357900B25CAD /* Observers */ = {
 			isa = PBXGroup;
 			children = (
-				3786FA441C45366900B25CAD /* NSOperationObserver.h */,
+				3786FA441C45366900B25CAD /* OperationObserver.h */,
+				3786FA481C453A4400B25CAD /* OperationBlockObserver.h */,
+				3786FA491C453A4400B25CAD /* OperationBlockObserver.m */,
+				3786FA4B1C453AC800B25CAD /* OperationTimeoutObserver.h */,
+				3786FA4C1C453AC800B25CAD /* OperationTimeoutObserver.m */,
 			);
 			path = Observers;
 			sourceTree = "<group>";
@@ -86,6 +107,8 @@
 			children = (
 				3786FA3B1C4535F200B25CAD /* OperationQueue.h */,
 				3786FA3C1C4535F200B25CAD /* OperationQueue.m */,
+				3786FA511C453CB300B25CAD /* ExclusivityController.h */,
+				3786FA521C453CB300B25CAD /* ExclusivityController.m */,
 			);
 			path = OperationQueues;
 			sourceTree = "<group>";
@@ -97,6 +120,8 @@
 				3786FA391C4535B400B25CAD /* Operation.m */,
 				3786FA3E1C45361A00B25CAD /* BlockOperation.h */,
 				3786FA3F1C45361A00B25CAD /* BlockOperation.m */,
+				3786FA541C453D6400B25CAD /* GroupOperation.h */,
+				3786FA551C453D6400B25CAD /* GroupOperation.m */,
 			);
 			path = Operations;
 			sourceTree = "<group>";
@@ -224,10 +249,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				37A8C3C91C4532D70075CB80 /* ViewController.m in Sources */,
+				3786FA4A1C453A4400B25CAD /* OperationBlockObserver.m in Sources */,
+				3786FA561C453D6400B25CAD /* GroupOperation.m in Sources */,
 				37A8C3C61C4532D70075CB80 /* AppDelegate.m in Sources */,
+				3786FA4D1C453AC800B25CAD /* OperationTimeoutObserver.m in Sources */,
 				37A8C3C31C4532D70075CB80 /* main.m in Sources */,
 				3786FA3D1C4535F200B25CAD /* OperationQueue.m in Sources */,
 				3786FA431C45365400B25CAD /* NSOperation+Operations.m in Sources */,
+				3786FA531C453CB300B25CAD /* ExclusivityController.m in Sources */,
+				3786FA501C453B4200B25CAD /* OperationErrors.m in Sources */,
 				3786FA3A1C4535B400B25CAD /* Operation.m in Sources */,
 				3786FA401C45361A00B25CAD /* BlockOperation.m in Sources */,
 				3786FA471C4536CC00B25CAD /* OperationCondition.m in Sources */,
@@ -259,12 +289,18 @@
 		37A8C3B81C4532880075CB80 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64 i386";
 			};
 			name = Debug;
 		};
 		37A8C3B91C4532880075CB80 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64 i386";
 			};
 			name = Release;
 		};

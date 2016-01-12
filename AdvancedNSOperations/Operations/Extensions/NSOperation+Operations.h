@@ -10,4 +10,7 @@
 
 @interface NSOperation (Operations)
 
+- (void)addCompletionBlock:(void (^)(void))block;
+- (void)addDenpendencies:(NSArray *)dependencies;
+
 @end

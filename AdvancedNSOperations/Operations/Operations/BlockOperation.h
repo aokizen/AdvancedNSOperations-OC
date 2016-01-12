@@ -8,6 +8,10 @@
 
 #import "Operation.h"
 
+typedef void (^OperationBlock) (void);
+
 @interface BlockOperation : Operation
+
+- (instancetype)initWithBlock:(OperationBlock)block;
 
 @end
